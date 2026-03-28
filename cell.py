@@ -59,7 +59,7 @@ class Cell:
             to_cell.__x1 + abs(to_cell.__x2 - to_cell.__x1) // 2,
             to_cell.__y1 + abs(to_cell.__y2 - to_cell.__y1) // 2,
         )
-        fill_color = "red" if undo else "black"
+        fill_color = "grey" if undo else "red"
         line = Line(c1, c2)
         if self.__win:
             self.__win.draw_line(line, fill_color=fill_color)
